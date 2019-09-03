@@ -25,8 +25,6 @@ export default class App extends RegComp {
 @import '@/assets/scss/_base.scss';
 
 #app {
-  .page-wrapper {
-    min-height: 100vh;
-  }
+  background: $black;
 }
 </style>

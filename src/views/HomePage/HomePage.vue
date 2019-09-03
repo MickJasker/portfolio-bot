@@ -1,19 +1,25 @@
 <template>
   <section class="home-page">
-    <div class="content">
-      <h1 ref="heading">Landing</h1>
-      <v-button @click.native="navigateToPlace('amsterdam')" ref="cta" primary>See my places</v-button>
-    </div>
+    <header class="content">
+      <h2>Hi there,</h2>
+      <h1>My name is Mick</h1>
+    </header>
+    <background-video :src="require('@/assets/videos/space.mp4')" />
   </section>
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractPageTransitionComponent } from 'vue-transition-component';
 import HomePageTransitionController from './HomePageTransitionController';
+import BackgroundVideo from '@/components/atoms/BackgroundVideo';
 
 const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
 
-@Component
+@Component({
+  components: {
+    BackgroundVideo,
+  },
+})
 export default class HomePage extends TransitionPage {
   private transitionController: HomePageTransitionController | undefined;
 
@@ -22,15 +28,6 @@ export default class HomePage extends TransitionPage {
     this.transitionController = new HomePageTransitionController(this);
     // @ts-ignore
     this.isReady();
-  }
-
-  navigateToPlace(place: string): void {
-    this.$router.push({
-      name: 'place',
-      params: {
-        place,
-      },
-    });
   }
 }
 </script>
@@ -44,18 +41,27 @@ export default class HomePage extends TransitionPage {
   flex-flow: column;
   align-items: center;
   min-height: 100vh;
-  background-image: url('~@/assets/images/planet-earth.jpg');
-  background-size: cover;
-  background-position: center;
 
-  .content {
+  header {
+    z-index: 1;
     width: fit-content;
     text-align: center;
+    filter: drop-shadow(0 0 5rem rgba(black, 0.8));
+
+    h2 {
+      color: $white;
+      font-size: 4.8rem;
+      opacity: 0.7;
+      line-height: 4rem;
+      font-weight: 300;
+      margin-bottom: 1.6rem;
+    }
 
     h1 {
-      font-size: 7.2rem;
+      font-size: 9.6rem;
       color: $white;
       font-weight: 800;
+      line-height: 8rem;
       margin-bottom: 2rem;
     }
   }
