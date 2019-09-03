@@ -14,7 +14,8 @@ export default class BackgroundVideoTransitionController extends AbstractTransit
   protected setupTransitionInTimeline(
     timeline:TimelineMax,
     parent:IAbstractTransitionComponent,
-    id:string): void {}
+    id:string,
+  ): void {}
 
   /**
    * Use this method to setup your transition out timeline
@@ -28,7 +29,8 @@ export default class BackgroundVideoTransitionController extends AbstractTransit
   protected setupTransitionOutTimeline(
     timeline:TimelineMax,
     parent:IAbstractTransitionComponent,
-    id:string): void {}
+    id:string,
+  ): void {}
 
   /**
    * Use this method to setup your looping timeline
@@ -42,5 +44,6 @@ export default class BackgroundVideoTransitionController extends AbstractTransit
   protected setupLoopingAnimationTimeline(
     timeline:TimelineMax,
     parent:IAbstractTransitionComponent,
-    id:string): void {}
+    id:string,
+  ): void {}
 }
