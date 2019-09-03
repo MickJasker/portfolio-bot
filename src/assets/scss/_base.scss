@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 10px;
+  font-family: 'Work Sans', sans-serif;
+  background: #e9f5f9;
+  color: #15323b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,800&display=swap');

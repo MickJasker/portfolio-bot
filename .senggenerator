@@ -1,0 +1,4 @@
+{
+  "templatePath": "./templates",
+  "destination": "./src/components"
+}
