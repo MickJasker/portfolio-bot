@@ -31,7 +31,7 @@ export default class VButton extends TransitionComponent {
 <style lang="scss" scoped>
 @import '@/assets/scss/_var.scss';
 .v-button {
-  background: $primary;
+  background: $blue;
   color: $white;
   font-size: 2.4rem;
   border: none;
@@ -42,14 +42,14 @@ export default class VButton extends TransitionComponent {
 
   &:hover,
   &:focus {
-    background: lighten($primary, 3);
+    background: lighten($blue, 3);
     cursor: pointer;
     outline: none;
     padding: 1.5rem 3.5rem;
   }
 
   &:active {
-    background: lighten($primary, 7);
+    background: lighten($blue, 7);
   }
 }
 </style>

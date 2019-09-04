@@ -25,6 +25,5 @@ export default class App extends RegComp {
 @import '@/assets/scss/_base.scss';
 
 #app {
-  background: $black;
 }
 </style>

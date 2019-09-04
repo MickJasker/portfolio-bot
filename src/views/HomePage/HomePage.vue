@@ -1,10 +1,6 @@
 <template>
   <section class="home-page">
-    <header class="content">
-      <h2 ref="subheading">Hi there,</h2>
-      <h1 ref="heading">My name is Mick</h1>
-    </header>
-    <background-video ref="bgVideo" :src="require('@/assets/videos/space.mp4')" />
+    <landing-block ref="landing" />
   </section>
 </template>
 <script lang="ts">
@@ -12,12 +8,14 @@ import { Vue, Component } from 'vue-property-decorator';
 import { AbstractPageTransitionComponent } from 'vue-transition-component';
 import HomePageTransitionController from './HomePageTransitionController';
 import BackgroundVideo from '@/components/atoms/BackgroundVideo';
+import LandingBlock from '@/components/organisms/LandingBlock';
 
 const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
 
 @Component({
   components: {
     BackgroundVideo,
+    LandingBlock,
   },
 })
 export default class HomePage extends TransitionPage {
