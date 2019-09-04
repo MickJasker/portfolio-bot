@@ -1,20 +1,21 @@
 <template>
   <section class="home-page">
     <landing-block ref="landing" />
+    <background-wave />
   </section>
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractPageTransitionComponent } from 'vue-transition-component';
 import HomePageTransitionController from './HomePageTransitionController';
-import BackgroundVideo from '@/components/atoms/BackgroundVideo';
+import BackgroundWave from '@/components/atoms/BackgroundWave';
 import LandingBlock from '@/components/organisms/LandingBlock';
 
 const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
 
 @Component({
   components: {
-    BackgroundVideo,
+    BackgroundWave,
     LandingBlock,
   },
 })

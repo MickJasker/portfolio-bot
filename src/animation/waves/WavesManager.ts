@@ -3,6 +3,7 @@ import Disposable from 'seng-disposable';
 import { DisposableEventListener } from 'seng-disposable-event-listener';
 import CanvasWaveLine from './CanvasWaveLine';
 import IWaveShapeConfig from './IWaveShapeConfig';
+import IWaveShapeOptions from './IWaveShapeOptions';
 
 export default class WavesManager extends Disposable {
   protected static TOTAL_SAMPLES: number = 150;
@@ -24,9 +25,20 @@ export default class WavesManager extends Disposable {
 
   private isRunning: boolean = false;
 
-  constructor(parent: HTMLElement, hasManualResize: boolean = false) {
+  private color: string;
+
+  private shapeConfig: IWaveShapeOptions;
+
+  constructor(
+    parent: HTMLElement,
+    color: string = '#fff',
+    shapeConfig: IWaveShapeOptions,
+    hasManualResize: boolean = false,
+  ) {
     super();
 
+    this.color = color;
+    this.shapeConfig = shapeConfig;
     this.parentElement = parent;
     this.createCanvas();
 
@@ -44,13 +56,7 @@ export default class WavesManager extends Disposable {
 
     shapes.forEach((shape, index) => {
       const start = index * 2;
-      this.lines[start] = new CanvasWaveLine({
-        yOffset: 75,
-        yDerivative: 0,
-        frequency: -0.5,
-        amplifier: 75,
-        spatialFrequency: 1250,
-      });
+      this.lines[start] = new CanvasWaveLine(this.shapeConfig);
       this.lines[start + 1] = new CanvasWaveLine({
         yOffset: 475,
         yDerivative: 0,
@@ -79,7 +85,7 @@ export default class WavesManager extends Disposable {
     this.time = Date.now() / 1000;
 
     for (let i = 0; i < this.lines.length; i += 2) {
-      this.drawWave(this.context, '#fff', [this.lines[i], this.lines[i + 1]], this.time);
+      this.drawWave(this.context, this.color, [this.lines[i], this.lines[i + 1]], this.time);
     }
 
     if (!this.isRunning) return;
