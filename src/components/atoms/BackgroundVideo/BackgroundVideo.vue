@@ -1,5 +1,5 @@
 <template>
-  <video class="background-video" autoplay muted loop></video>
+  <video class="background-video" autoplay muted loop playsinline></video>
 </template>
 
 <script lang="ts">

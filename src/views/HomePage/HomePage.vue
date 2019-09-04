@@ -1,10 +1,10 @@
 <template>
   <section class="home-page">
     <header class="content">
-      <h2>Hi there,</h2>
-      <h1>My name is Mick</h1>
+      <h2 ref="subheading">Hi there,</h2>
+      <h1 ref="heading">My name is Mick</h1>
     </header>
-    <background-video :src="require('@/assets/videos/space.mp4')" />
+    <background-video ref="bgVideo" :src="require('@/assets/videos/space.mp4')" />
   </section>
 </template>
 <script lang="ts">

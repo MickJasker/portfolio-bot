@@ -18,7 +18,28 @@ export default class HomePageTransitionController extends AbstractTransitionCont
     timeline: TimelineMax,
     parent: IAbstractTransitionComponent,
     id: string,
-  ): void {}
+  ): void {
+    timeline
+      .from(
+        parent.$refs.subheading,
+        1,
+        {
+          y: 50,
+          autoAlpha: 0,
+        },
+        '=+1',
+      )
+      .from(
+        parent.$refs.heading,
+        1,
+        {
+          y: 50,
+          autoAlpha: 0,
+        },
+        '=-0.75',
+      )
+      .add(this.getTimeline(<IAbstractTransitionComponent>parent.$refs.bgVideo));
+  }
 
   /**
    * Use this method to setup your transition out timeline
