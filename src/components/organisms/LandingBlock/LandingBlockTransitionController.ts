@@ -3,8 +3,10 @@ import {
   IAbstractTransitionComponent,
 } from 'vue-transition-component';
 import { TimelineMax } from 'gsap';
+/*eslint-disable*/
 // @ts-ignore
 import SplitText from '@/vendor/SplitText';
+/* eslint-enable */
 
 export default class LandingBlockTransitionController extends AbstractTransitionController {
   /**

@@ -1,7 +1,11 @@
 <template>
   <section class="landing-block">
-    <h5 ref="subheading">Hi there,</h5>
-    <h1 ref="heading">My name is Mick</h1>
+    <h5 ref="subheading">
+      Hi there,
+    </h5>
+    <h1 ref="heading">
+      My name is Mick
+    </h1>
   </section>
 </template>
 
@@ -14,14 +18,14 @@ const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
 @Component
 export default class LandingBlock extends TransitionComponent {
-  private transitionController: LandingBlockTransitionController | undefined;
+    private transitionController: LandingBlockTransitionController | undefined;
 
-  handleAllComponentsReady() {
+    handleAllComponentsReady() {
     // @ts-ignore
-    this.transitionController = new LandingBlockTransitionController(this);
-    // @ts-ignore
-    this.isReady();
-  }
+      this.transitionController = new LandingBlockTransitionController(this);
+      // @ts-ignore
+      this.isReady();
+    }
 }
 </script>
 

@@ -12,9 +12,9 @@ export default class AboutPageTransitionController extends AbstractTransitionCon
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupTransitionInTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string,
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
   ): void {}
 
   /**
@@ -27,9 +27,9 @@ export default class AboutPageTransitionController extends AbstractTransitionCon
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupTransitionOutTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string,
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
   ): void {}
 
   /**
@@ -42,8 +42,8 @@ export default class AboutPageTransitionController extends AbstractTransitionCon
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupLoopingAnimationTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string,
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
   ): void {}
 }

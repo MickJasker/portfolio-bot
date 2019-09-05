@@ -20,14 +20,14 @@ const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
   },
 })
 export default class HomePage extends TransitionPage {
-  private transitionController: HomePageTransitionController | undefined;
+    private transitionController: HomePageTransitionController | undefined;
 
-  handleAllComponentsReady() {
+    handleAllComponentsReady() {
     // @ts-ignore
-    this.transitionController = new HomePageTransitionController(this);
-    // @ts-ignore
-    this.isReady();
-  }
+      this.transitionController = new HomePageTransitionController(this);
+      // @ts-ignore
+      this.isReady();
+    }
 }
 </script>
 

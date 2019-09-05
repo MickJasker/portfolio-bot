@@ -1,5 +1,8 @@
 <template>
-  <button class="v-button" :class="{primary: primary, flat: flat}">
+  <button
+    class="v-button"
+    :class="{primary: primary, flat: flat}"
+  >
     <slot />
   </button>
 </template>
@@ -13,7 +16,7 @@ const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
 @Component
 export default class VButton extends TransitionComponent {
-  private transitionController: VButtonTransitionController | undefined;
+    private transitionController: VButtonTransitionController | undefined;
 
   @Prop(Boolean) readonly primary?: boolean;
 

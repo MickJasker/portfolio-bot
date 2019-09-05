@@ -1,5 +1,11 @@
 <template>
-  <video class="background-video" autoplay muted loop playsinline></video>
+  <video
+    class="background-video"
+    autoplay
+    muted
+    loop
+    playsinline
+  />
 </template>
 
 <script lang="ts">
@@ -11,14 +17,14 @@ const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
 @Component
 export default class BackgroundVideo extends TransitionComponent {
-  private transitionController: BackgroundVideoTransitionController | undefined;
+    private transitionController: BackgroundVideoTransitionController | undefined;
 
-  handleAllComponentsReady() {
+    handleAllComponentsReady() {
     // @ts-ignore
-    this.transitionController = new BackgroundVideoTransitionController(this);
-    // @ts-ignore
-    this.isReady();
-  }
+      this.transitionController = new BackgroundVideoTransitionController(this);
+      // @ts-ignore
+      this.isReady();
+    }
 }
 </script>
 

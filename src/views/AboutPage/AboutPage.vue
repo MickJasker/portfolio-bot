@@ -12,14 +12,14 @@ const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
 
 @Component
 export default class AboutPage extends TransitionPage {
-  private transitionController: AboutPageTransitionController | undefined;
+    private transitionController: AboutPageTransitionController | undefined;
 
-  handleAllComponentsReady() {
+    handleAllComponentsReady() {
     // @ts-ignore
-    this.transitionController = new AboutPageTransitionController(this);
-    // @ts-ignore
-    this.isReady();
-  }
+      this.transitionController = new AboutPageTransitionController(this);
+      // @ts-ignore
+      this.isReady();
+    }
 }
 </script>
 
