@@ -1,4 +1,7 @@
-import { AbstractTransitionController, IAbstractTransitionComponent } from 'vue-transition-component';
+import {
+  AbstractTransitionController,
+  IAbstractTransitionComponent,
+} from 'vue-transition-component';
 import { TimelineMax } from 'gsap';
 
 export default class VTextFieldTransitionController extends AbstractTransitionController {
@@ -12,9 +15,15 @@ export default class VTextFieldTransitionController extends AbstractTransitionCo
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupTransitionInTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string): void {}
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
+  ): void {
+    timeline.from(parent.$el, 1, {
+      autoAlpha: 0,
+      y: 50,
+    });
+  }
 
   /**
    * Use this method to setup your transition out timeline
@@ -26,9 +35,10 @@ export default class VTextFieldTransitionController extends AbstractTransitionCo
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupTransitionOutTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string): void {}
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
+  ): void {}
 
   /**
    * Use this method to setup your looping timeline
@@ -40,7 +50,8 @@ export default class VTextFieldTransitionController extends AbstractTransitionCo
    * @param {string} id The transition id that was provided when constructing the controller
    */
   protected setupLoopingAnimationTimeline(
-    timeline:TimelineMax,
-    parent:IAbstractTransitionComponent,
-    id:string): void {}
+    timeline: TimelineMax,
+    parent: IAbstractTransitionComponent,
+    id: string,
+  ): void {}
 }

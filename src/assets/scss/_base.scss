@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 10px;
   background: #f4f4f8;
   color: #151516;
 }
@@ -12,19 +12,13 @@ html {
 
 @media screen and (min-width: 467px) {
   html {
-    font-size: 2vw;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.6vw;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 1vw;
+    font-size: 14px;
   }
 }
 

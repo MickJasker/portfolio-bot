@@ -29,5 +29,9 @@ export default class ChatWrapper extends TransitionComponent {
 <style lang="scss" scoped>
 @import '@/assets/scss/_var.scss';
 .chat-wrapper {
+  position: absolute;
+  bottom: 6rem;
+  padding: 2rem;
+  width: 100%;
 }
 </style>

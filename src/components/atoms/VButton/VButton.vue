@@ -33,14 +33,17 @@ export default class VButton extends TransitionComponent {
 .v-button {
   background: $blue;
   color: $white;
-  font-size: 2.4rem;
+  font-size: 2rem;
   border: none;
   padding: 0 3rem;
   box-shadow: 0 0 1rem rgba($blue, 0.5);
-  text-shadow: 0 0 1rem rgba($white, 0.5);
   border-radius: 0.5rem;
   transition: 0.2s ease-out;
   transition-property: padding, background;
+
+  * {
+    filter: drop-shadow(0 0 0.5rem rgba($white, 0.75));
+  }
 
   &:hover,
   &:focus {
