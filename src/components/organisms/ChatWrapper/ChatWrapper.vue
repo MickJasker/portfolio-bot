@@ -1,6 +1,8 @@
 <template>
   <div class="chat-wrapper">
-    <v-text-field />
+    <form @submit.prevent="sendMessage">
+      <v-text-field />
+    </form>
   </div>
 </template>
 

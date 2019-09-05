@@ -1,6 +1,7 @@
 <template>
   <div class="v-text-field">
     <input type="text" placeholder="Start typing..." />
+    <v-button>Send</v-button>
   </div>
 </template>
 
@@ -27,12 +28,14 @@ export default class VTextField extends TransitionComponent {
 <style lang="scss" scoped>
 @import '@/assets/scss/_var.scss';
 .v-text-field {
-  padding: 1rem 2rem;
+  padding: 0.5rem;
+  display: flex;
   background: $white;
   box-shadow: 0 1rem 2rem rgba(black, 0.1), 0 0 2rem rgba(black, 0.1);
   border-radius: 0.5rem;
 
   input {
+    padding: 1rem 2rem;
     width: 100%;
     font-size: 2rem;
     border: none;

@@ -18,20 +18,7 @@ export default class VButtonTransitionController extends AbstractTransitionContr
     timeline: TimelineMax,
     parent: IAbstractTransitionComponent,
     id: string,
-  ): void {
-    timeline.fromTo(
-      parent.$el,
-      1,
-      {
-        y: 50,
-        autoAlpha: 0,
-      },
-      {
-        y: 0,
-        autoAlpha: 1,
-      },
-    );
-  }
+  ): void {}
 
   /**
    * Use this method to setup your transition out timeline
