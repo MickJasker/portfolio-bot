@@ -43,7 +43,7 @@ export default class BackgroundWave extends TransitionComponent {
   private setupWave(el: HTMLElement, index: number) {
     let wavesManager;
     if (index === 0) {
-      wavesManager = new WavesManager(el, '#F1F1F6', {
+      wavesManager = new WavesManager(el, '#f4f4f8', {
         yOffset: 75,
         yDerivative: 0,
         frequency: -0.5,
@@ -51,7 +51,7 @@ export default class BackgroundWave extends TransitionComponent {
         spatialFrequency: 1500,
       });
     } else if (index === 1) {
-      wavesManager = new WavesManager(el, '#EBEBEE', {
+      wavesManager = new WavesManager(el, '#f4f4f8', {
         yOffset: 75,
         yDerivative: 0,
         frequency: -0.4,
@@ -59,7 +59,7 @@ export default class BackgroundWave extends TransitionComponent {
         spatialFrequency: 1250,
       });
     } else {
-      wavesManager = new WavesManager(el, '#E6E6EA', {
+      wavesManager = new WavesManager(el, '#f4f4f8', {
         yOffset: 75,
         yDerivative: 0,
         frequency: -0.6,
@@ -86,7 +86,7 @@ export default class BackgroundWave extends TransitionComponent {
 @import '@/assets/scss/_var.scss';
 .background-wave {
   position: fixed;
-  top: 0;
+  top: -5rem;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -96,15 +96,6 @@ export default class BackgroundWave extends TransitionComponent {
   .wave {
     width: 100%;
     height: 55vh;
-
-    &-1 {
-    }
-    &-2 {
-      background: #f1f1f6;
-    }
-    &-3 {
-      background: #ebebee;
-    }
   }
 }
 </style>

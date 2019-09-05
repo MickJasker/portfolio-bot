@@ -3,6 +3,8 @@ import {
   IAbstractTransitionComponent,
 } from 'vue-transition-component';
 import { TimelineMax } from 'gsap';
+// @ts-ignore
+import SplitText from '@/vendor/SplitText';
 
 export default class LandingBlockTransitionController extends AbstractTransitionController {
   /**
@@ -19,9 +21,11 @@ export default class LandingBlockTransitionController extends AbstractTransition
     parent: IAbstractTransitionComponent,
     id: string,
   ): void {
+    const heading = new SplitText(parent.$refs.heading);
+    const subheading = new SplitText(parent.$refs.subheading);
     timeline
-      .fromTo(
-        parent.$refs.subheading,
+      .staggerFromTo(
+        subheading.chars,
         1,
         {
           y: 50,
@@ -31,10 +35,11 @@ export default class LandingBlockTransitionController extends AbstractTransition
           y: 0,
           autoAlpha: 1,
         },
+        0.01,
         '=+1',
       )
-      .fromTo(
-        parent.$refs.heading,
+      .staggerFromTo(
+        heading.chars,
         1,
         {
           y: 50,
@@ -44,6 +49,7 @@ export default class LandingBlockTransitionController extends AbstractTransition
           y: 0,
           autoAlpha: 1,
         },
+        0.03,
         '=-0.75',
       );
   }

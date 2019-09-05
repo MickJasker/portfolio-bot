@@ -3,7 +3,9 @@ import IWaveShapeOptions from './IWaveShapeOptions';
 
 export default class CanvasWaveLine extends Disposable {
   private waveOptions!: IWaveShapeOptions;
+
   private freqOffset: number = 0;
+
   private lastUpdate: number = 0;
 
   private defaultOptions: IWaveShapeOptions = {
@@ -36,9 +38,9 @@ export default class CanvasWaveLine extends Disposable {
 
     let y = this.waveOptions.yOffset;
     y += this.waveOptions.yDerivative * x;
-    y +=
-      this.waveOptions.amplifier *
-      Math.sin((x / this.waveOptions.spatialFrequency) * Math.PI * 2 + this.freqOffset);
+    y
+      += this.waveOptions.amplifier
+      * Math.sin((x / this.waveOptions.spatialFrequency) * Math.PI * 2 + this.freqOffset);
     return y;
   }
 }

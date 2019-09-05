@@ -1,6 +1,6 @@
 <template>
   <section class="landing-block">
-    <h4 ref="subheading">Hi there,</h4>
+    <h5 ref="subheading">Hi there,</h5>
     <h1 ref="heading">My name is Mick</h1>
   </section>
 </template>
@@ -31,21 +31,21 @@ export default class LandingBlock extends TransitionComponent {
   z-index: 1;
   width: fit-content;
   text-align: center;
+  padding: 2rem;
 
-  h4 {
-    font-size: 3.6rem;
+  h5 {
+    font-size: 2.4rem;
     opacity: 0.7;
-    line-height: 4rem;
-    font-weight: 300;
+    line-height: 1em;
     margin-bottom: 1.6rem;
   }
 
   h1 {
-    font-size: 9.6rem;
+    font-size: 4.8rem;
     color: $red;
     filter: drop-shadow(0 0 0.5rem rgba($red, 0.5));
     font-weight: 800;
-    line-height: 8rem;
+    line-height: 1.1em;
     margin-bottom: 2rem;
   }
 }

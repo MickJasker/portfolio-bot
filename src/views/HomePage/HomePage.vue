@@ -57,10 +57,10 @@ export default class HomePage extends TransitionPage {
     }
 
     h1 {
-      font-size: 9.6rem;
+      font-size: 6rem;
       color: $white;
       font-weight: 800;
-      line-height: 8rem;
+      line-height: 6.4rem;
       margin-bottom: 2rem;
     }
   }

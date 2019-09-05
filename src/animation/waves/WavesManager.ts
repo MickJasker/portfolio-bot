@@ -9,6 +9,7 @@ export default class WavesManager extends Disposable {
   protected static TOTAL_SAMPLES: number = 150;
 
   protected canvasElement!: HTMLCanvasElement;
+
   protected context!: CanvasRenderingContext2D;
 
   protected lines: CanvasWaveLine[] = [];
@@ -95,7 +96,7 @@ export default class WavesManager extends Disposable {
 
   protected createCanvas(): void {
     this.canvasElement = document.createElement('canvas');
-    this.context = <CanvasRenderingContext2D>this.canvasElement.getContext('2d');
+    this.context = <CanvasRenderingContext2D> this.canvasElement.getContext('2d');
 
     this.updateSize();
 
@@ -135,6 +136,9 @@ export default class WavesManager extends Disposable {
       const x = (s * width) / WavesManager.TOTAL_SAMPLES;
       context.lineTo(x, lines[1].sample(x, time));
     }
+
+    context.shadowColor = '#ddd';
+    context.shadowBlur = 30;
 
     context.fill();
   }
