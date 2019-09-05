@@ -9,7 +9,7 @@ import { Vue, Component } from 'vue-property-decorator';
 import { AbstractPageTransitionComponent } from 'vue-transition-component';
 import HomePageTransitionController from './HomePageTransitionController';
 import BackgroundWave from '@/components/atoms/BackgroundWave';
-import LandingBlock from '@/components/organisms/LandingBlock';
+import LandingBlock from '@/components/templates/LandingBlock';
 
 const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
 
@@ -20,14 +20,14 @@ const TransitionPage = Vue.extend(AbstractPageTransitionComponent);
   },
 })
 export default class HomePage extends TransitionPage {
-    private transitionController: HomePageTransitionController | undefined;
+  private transitionController: HomePageTransitionController | undefined;
 
-    handleAllComponentsReady() {
+  handleAllComponentsReady() {
     // @ts-ignore
-      this.transitionController = new HomePageTransitionController(this);
-      // @ts-ignore
-      this.isReady();
-    }
+    this.transitionController = new HomePageTransitionController(this);
+    // @ts-ignore
+    this.isReady();
+  }
 }
 </script>
 

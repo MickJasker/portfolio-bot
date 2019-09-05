@@ -2,9 +2,12 @@ html {
   box-sizing: border-box;
   overflow: hidden;
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
   background: #f4f4f8;
   color: #151516;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (min-width: 467px) {

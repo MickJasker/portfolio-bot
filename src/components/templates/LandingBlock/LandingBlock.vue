@@ -1,11 +1,8 @@
 <template>
   <section class="landing-block">
-    <h5 ref="subheading">
-      Hi there,
-    </h5>
-    <h1 ref="heading">
-      My name is Mick
-    </h1>
+    <h5 ref="subheading">Hi there,</h5>
+    <h1 ref="heading">My name is Mick</h1>
+    <chat-wrapper class="chat-wrapper" />
   </section>
 </template>
 
@@ -13,19 +10,24 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractTransitionComponent } from 'vue-transition-component';
 import LandingBlockTransitionController from './LandingBlockTransitionController';
+import ChatWrapper from '@/components/organisms/ChatWrapper';
 
 const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
-@Component
+@Component({
+  components: {
+    ChatWrapper,
+  },
+})
 export default class LandingBlock extends TransitionComponent {
-    private transitionController: LandingBlockTransitionController | undefined;
+  private transitionController: LandingBlockTransitionController | undefined;
 
-    handleAllComponentsReady() {
+  handleAllComponentsReady() {
     // @ts-ignore
-      this.transitionController = new LandingBlockTransitionController(this);
-      // @ts-ignore
-      this.isReady();
-    }
+    this.transitionController = new LandingBlockTransitionController(this);
+    // @ts-ignore
+    this.isReady();
+  }
 }
 </script>
 
@@ -35,7 +37,12 @@ export default class LandingBlock extends TransitionComponent {
   z-index: 1;
   width: fit-content;
   text-align: center;
+  position: relative;
   padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 
   h5 {
     font-size: 2.4rem;
@@ -51,6 +58,12 @@ export default class LandingBlock extends TransitionComponent {
     font-weight: 800;
     line-height: 1.1em;
     margin-bottom: 2rem;
+  }
+
+  .chat-wrapper {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
   }
 }
 </style>
