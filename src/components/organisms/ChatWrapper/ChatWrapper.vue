@@ -1,19 +1,31 @@
 <template>
-  <div class="chat-wrapper">
+  <section class="chat-wrapper">
+    <div class="messages">
+      <chat-box>How can I help you?</chat-box>
+      <chat-box sender>
+        Can you tell me more about Human Centered Design
+      </chat-box>
+      <chat-box>Yeah sure. Got some great articles for you:</chat-box>
+    </div>
     <form @submit.prevent="sendMessage">
       <v-text-field />
     </form>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractTransitionComponent } from 'vue-transition-component';
+import ChatBox from '@/components/molecules/ChatBox';
 import ChatWrapperTransitionController from './ChatWrapperTransitionController';
 
 const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
-@Component
+@Component({
+  components: {
+    ChatBox,
+  },
+})
 export default class ChatWrapper extends TransitionComponent {
   private transitionController: ChatWrapperTransitionController | undefined;
 
@@ -22,6 +34,10 @@ export default class ChatWrapper extends TransitionComponent {
     this.transitionController = new ChatWrapperTransitionController(this);
     // @ts-ignore
     this.isReady();
+  }
+
+  sendMessage() {
+    console.log('sendMessage');
   }
 }
 </script>
@@ -33,5 +49,10 @@ export default class ChatWrapper extends TransitionComponent {
   bottom: 6rem;
   padding: 2rem;
   width: 100%;
+
+  .messages {
+    display: flex;
+    flex-flow: column;
+  }
 }
 </style>

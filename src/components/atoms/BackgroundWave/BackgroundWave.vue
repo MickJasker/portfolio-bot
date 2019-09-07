@@ -1,8 +1,17 @@
 <template>
   <div class="background-wave">
-    <div ref="wave1" class="wave wave-1"></div>
-    <div ref="wave2" class="wave wave-2"></div>
-    <div ref="wave3" class="wave wave-3"></div>
+    <div
+      ref="wave1"
+      class="wave wave-1"
+    />
+    <div
+      ref="wave2"
+      class="wave wave-2"
+    />
+    <div
+      ref="wave3"
+      class="wave wave-3"
+    />
   </div>
 </template>
 
@@ -28,8 +37,8 @@ export default class BackgroundWave extends TransitionComponent {
   }
 
   mounted() {
-    this.waves = this.getWaveElements(<HTMLElement>this.$el);
-
+    // @ts-ignore
+    this.waves = this.getWaveElements(this.$el);
     this.waves.forEach((wave, index) => {
       this.setupWave(wave, index);
     });
@@ -70,11 +79,11 @@ export default class BackgroundWave extends TransitionComponent {
 
     wavesManager.init([
       {
-        //@ts-ignore
+        // @ts-ignore
         top: 50,
-        //@ts-ignore
+        // @ts-ignore
         bottom: 0,
-        background: '#f00',
+        background: '#fff',
       },
     ]);
     wavesManager.start();

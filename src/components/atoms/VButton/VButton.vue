@@ -1,5 +1,8 @@
 <template>
-  <button class="v-button" :class="{primary: primary, flat: flat}">
+  <button
+    class="v-button"
+    :class="{primary: primary, flat: flat}"
+  >
     <slot />
   </button>
 </template>

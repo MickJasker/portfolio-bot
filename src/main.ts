@@ -9,7 +9,7 @@ import './fontAwesome';
 
 Vue.config.productionTip = false;
 
-Object.keys(components).forEach(key => {
+Object.keys(components).forEach((key) => {
   // @ts-ignore
   Vue.component(key, components[key]);
 });

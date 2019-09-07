@@ -1,8 +1,12 @@
 <template>
   <section class="landing-block">
     <div class="content">
-      <h5 ref="subheading">Hi there,</h5>
-      <h1 ref="heading">My name is Mick</h1>
+      <h5 ref="subheading">
+        Hi there,
+      </h5>
+      <h1 ref="heading">
+        My name is Mick
+      </h1>
     </div>
     <chat-wrapper class="chat-wrapper" />
   </section>

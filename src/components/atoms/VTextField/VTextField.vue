@@ -1,6 +1,9 @@
 <template>
   <div class="v-text-field">
-    <input type="text" placeholder="Start typing..." />
+    <input
+      type="text"
+      placeholder="Start typing..."
+    >
     <v-button class="button">
       <font-awesome-icon :icon="['fal', 'paper-plane']" />
     </v-button>
@@ -37,6 +40,7 @@ export default class VTextField extends TransitionComponent {
   background: $white;
   box-shadow: 0 1rem 2rem rgba(black, 0.1), 0 0 2rem rgba(black, 0.1);
   border-radius: 0.5rem;
+  margin-top: 1rem;
 
   input {
     padding: 0.7rem 1rem;

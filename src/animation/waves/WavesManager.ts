@@ -59,10 +59,10 @@ export default class WavesManager extends Disposable {
       const start = index * 2;
       this.lines[start] = new CanvasWaveLine(this.shapeConfig);
       this.lines[start + 1] = new CanvasWaveLine({
-        yOffset: 475,
+        yOffset: 1275,
         yDerivative: 0,
-        frequency: -0.5,
-        amplifier: 75,
+        frequency: -0,
+        amplifier: 0,
         spatialFrequency: 1250,
       });
     });
@@ -96,7 +96,7 @@ export default class WavesManager extends Disposable {
 
   protected createCanvas(): void {
     this.canvasElement = document.createElement('canvas');
-    this.context = <CanvasRenderingContext2D> this.canvasElement.getContext('2d');
+    this.context = <CanvasRenderingContext2D>this.canvasElement.getContext('2d');
 
     this.updateSize();
 
