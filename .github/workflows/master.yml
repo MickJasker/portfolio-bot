@@ -24,7 +24,7 @@ jobs:
           yarn
           npm install -g @vue/cli
           npm install -g firebase-tools 
-          yarn test
+          yarn test:unit
           yarn build --modern --if-present
           firebase deploy --only hosting --token=$FIREBASE_TOKEN --project porfolio-bot-ipwpmm --non-interactive --only hosting:porfolio-bot-ipwpmm
         env:
