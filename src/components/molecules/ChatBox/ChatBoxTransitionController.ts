@@ -19,14 +19,10 @@ export default class ChatBoxTransitionController extends AbstractTransitionContr
     parent: IAbstractTransitionComponent,
     id: string,
   ): void {
-    timeline.from(
-      parent.$el,
-      0.5,
-      {
-        autoAlpha: 0,
-        y: 50,
-      },
-    );
+    timeline.from(parent.$el, 0.5, {
+      autoAlpha: 0,
+      y: 50,
+    });
   }
 
   /**

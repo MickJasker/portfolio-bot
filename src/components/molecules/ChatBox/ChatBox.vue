@@ -45,7 +45,7 @@ export default class ChatBox extends TransitionComponent {
   font-size: 1.8rem;
   box-shadow: 0 0 1rem rgba($yellow, 0.5);
   border-radius: 1rem 1rem 1rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: #503c00;
   max-width: 80%;
   text-align: left;

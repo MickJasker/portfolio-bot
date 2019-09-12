@@ -1,14 +1,14 @@
 <template>
   <section class="chat-wrapper">
     <div class="messages">
-      <chat-box>How can I help you?</chat-box>
-      <chat-box sender>
-        Can you tell me more about Human Centered Design
-      </chat-box>
-      <chat-box>Yeah sure. Got some great articles for you:</chat-box>
+      <chat-box
+        v-for="message in chat.messages"
+        :key="`message-${message.id}`"
+        :sender="message.sender"
+      >{{ message.content }}</chat-box>
     </div>
     <form @submit.prevent="sendMessage">
-      <v-text-field />
+      <v-text-field ref="input" :input-data.sync="messageInput" />
     </form>
   </section>
 </template>
@@ -16,8 +16,10 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractTransitionComponent } from 'vue-transition-component';
+import ITextField from '@/components/atoms/VTextField';
 import ChatBox from '@/components/molecules/ChatBox';
 import ChatWrapperTransitionController from './ChatWrapperTransitionController';
+import Chat from '@/store/Chat';
 
 const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
@@ -29,6 +31,16 @@ const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 export default class ChatWrapper extends TransitionComponent {
   private transitionController: ChatWrapperTransitionController | undefined;
 
+  chat: Chat;
+
+  messageInput: string = '';
+
+  constructor() {
+    super();
+
+    this.chat = new Chat();
+  }
+
   handleAllComponentsReady() {
     // @ts-ignore
     this.transitionController = new ChatWrapperTransitionController(this);
@@ -36,8 +48,23 @@ export default class ChatWrapper extends TransitionComponent {
     this.isReady();
   }
 
+  mounted() {
+    setTimeout(() => {
+      this.chat.createChat();
+    }, 2000);
+  }
+
   sendMessage() {
-    console.log('sendMessage');
+    this.chat
+      .sendMessage(this.messageInput)
+      .then(() => {
+        this.messageInput = '';
+        const textField = <ITextField>this.$refs.input;
+        textField.clearField();
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }
 }
 </script>
@@ -45,7 +72,6 @@ export default class ChatWrapper extends TransitionComponent {
 <style lang="scss" scoped>
 @import '@/assets/scss/_var.scss';
 .chat-wrapper {
-  position: absolute;
   bottom: 6rem;
   padding: 2rem;
   width: 100%;

@@ -43,6 +43,7 @@ export default class LandingBlock extends TransitionComponent {
   z-index: 1;
   width: fit-content;
   text-align: center;
+  overflow: scroll;
   padding: 2rem;
   min-height: 100vh;
   display: flex;

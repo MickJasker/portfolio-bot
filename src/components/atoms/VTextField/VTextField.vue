@@ -1,9 +1,11 @@
 <template>
   <div class="v-text-field">
     <input
+      v-model="inputData"
       type="text"
       placeholder="Start typing..."
-    >
+      @keyup="$emit('update:inputData', inputData);"
+    />
     <v-button class="button">
       <font-awesome-icon :icon="['fal', 'paper-plane']" />
     </v-button>
@@ -14,12 +16,19 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { AbstractTransitionComponent } from 'vue-transition-component';
 import VTextFieldTransitionController from './VTextFieldTransitionController';
+import ITextField from './ITextField';
 
 const TransitionComponent = Vue.extend(AbstractTransitionComponent);
 
 @Component
-export default class VTextField extends TransitionComponent {
+export default class VTextField extends TransitionComponent implements ITextField {
   private transitionController: VTextFieldTransitionController | undefined;
+
+  inputData = '';
+
+  clearField() {
+    this.inputData = '';
+  }
 
   handleAllComponentsReady() {
     // @ts-ignore
