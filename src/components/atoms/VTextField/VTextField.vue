@@ -5,7 +5,7 @@
       type="text"
       placeholder="Start typing..."
       @keyup="$emit('update:inputData', inputData);"
-    />
+    >
     <v-button class="button">
       <font-awesome-icon :icon="['fal', 'paper-plane']" />
     </v-button>

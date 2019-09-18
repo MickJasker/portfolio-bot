@@ -1,9 +1,18 @@
+import axios, { AxiosResponse } from 'axios';
+import { QueryInput } from 'dialogflow';
 import IChat from './IChat';
 import Message from '../Message';
 import IMessage from '../Message/IMessage';
 
+interface IDialogFlowMessage {
+  queryInput: QueryInput;
+  sessionId: string;
+}
+
 class Chat implements IChat {
   messages: Message[] = [];
+
+  sessionId: string;
 
   public createChat() {
     const message = new Message('How can I help you?', false);
@@ -11,33 +20,50 @@ class Chat implements IChat {
     this.messages = [message];
   }
 
-  private async createNewMessage(message: IMessage): Promise<void> {
-    const { content, sender } = message;
-    const newMessage = new Message(content, sender);
-
-    return new Promise((resolve, reject) => {
-      if (content) {
-        try {
-          this.messages.push(newMessage);
-          resolve();
-        } catch (error) {
-          reject(error);
-        }
-      } else {
-        const error = new Error('Message content cannot be empty');
-        reject(error);
-      }
-    });
+  constructor() {
+    this.sessionId = this.generateId();
   }
 
-  public async sendMessage(content: string): Promise<void> {
-    const message: IMessage = {
-      content,
-      sender: true,
-      id: Message.generateId(),
-    };
+  private generateId(): string {
+    return Math.random()
+      .toString(36)
+      .substr(2);
+  }
 
-    return this.createNewMessage(message);
+  private sendToDialogFlow(message: IDialogFlowMessage): Promise<AxiosResponse> {
+    return axios.post('http://localhost:5000/porfolio-bot-ipwpmm/us-central1/app/message', message);
+  }
+
+  public sendMessage(content: string, sender = true): void {
+    if (content) {
+      const message: IMessage = {
+        content,
+        sender,
+        id: Message.generateId(),
+      };
+      this.messages.push(message);
+      this.sendToDialogFlow({
+        queryInput: {
+          text: {
+            text: content,
+            languageCode: 'EN',
+          },
+        },
+        sessionId: this.sessionId,
+      })
+        .then((response) => {
+          this.messages.push({
+            sender: false,
+            content: response.data.fulfillmentText,
+            id: Message.generateId(),
+          });
+        })
+        .catch((error: Error) => {
+          console.error(error);
+        });
+    } else {
+      console.error('message cannot be empty');
+    }
   }
 }
 

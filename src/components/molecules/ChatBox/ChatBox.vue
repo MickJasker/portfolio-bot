@@ -51,6 +51,7 @@ export default class ChatBox extends TransitionComponent {
   text-align: left;
   text-shadow: 0 0 0.5rem rgba(#503c00, 0.5);
   position: relative;
+  text-transform: capitalize;
 
   &:after {
     content: '';

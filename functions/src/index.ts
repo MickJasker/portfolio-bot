@@ -16,7 +16,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['https://localhost:8080', 'https://mickjasker.dev'],
+    origin: ['http://localhost:8080', 'https://mickjasker.dev'],
   }),
 );
 

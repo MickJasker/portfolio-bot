@@ -1,0 +1,657 @@
+[debug] [2019-09-17T19:22:01.866Z] ----------------------------------------------------------------------
+[debug] [2019-09-17T19:22:01.868Z] Command:       /Users/mickjasker/.nvm/versions/node/v8.13.0/bin/node /Users/mickjasker/.nvm/versions/node/v8.10.0/bin/firebase serve --only functions
+[debug] [2019-09-17T19:22:01.868Z] CLI Version:   7.3.0
+[debug] [2019-09-17T19:22:01.868Z] Platform:      darwin
+[debug] [2019-09-17T19:22:01.868Z] Node Version:  v8.13.0
+[debug] [2019-09-17T19:22:01.869Z] Time:          Tue Sep 17 2019 21:22:01 GMT+0200 (CEST)
+[debug] [2019-09-17T19:22:01.869Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-17T19:22:01.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-17T19:22:01.878Z] > authorizing via signed-in user
+[debug] [2019-09-17T19:22:01.878Z] [iam] checking project porfolio-bot-ipwpmm for permissions ["firebase.projects.get"]
+[debug] [2019-09-17T19:22:01.880Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-17T19:22:01.880Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-17T19:22:02.013Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-17T19:22:02.026Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/porfolio-bot-ipwpmm:testIamPermissions  
+
+[debug] [2019-09-17T19:22:02.790Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-17T19:22:02.791Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/porfolio-bot-ipwpmm  
+ 
+[debug] [2019-09-17T19:22:03.039Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Using node@8 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/mickjasker/Documents/projects/portfolio-bot/functions" for Cloud Functions...
+[debug] [2019-09-17T19:22:03.539Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[debug] [2019-09-17T19:22:03.539Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:22:03.540Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:22:03.541Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:03.541Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[app]: http function initialized (http://localhost:5000/porfolio-bot-ipwpmm/us-central1/app).
+[debug] [2019-09-17T19:22:05.304Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:22:05.529Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:22:05.529Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:22:05.531Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:22:05.531Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:05.532Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:05.839Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:22:05.839Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:22:05.839Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:22:05.848Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_42992.sock"}
+[debug] [2019-09-17T19:22:05.849Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_42992.sock"}
+[debug] [2019-09-17T19:22:05.854Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:22:05.999Z] [runtime-status] Ephemeral server survived. {}
+[info] >  (node:42992) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'charCodeAt' of undefined
+[info] >      at peg$parsetemplate (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/google-gax/build/src/pathTemplateParser.js:304:17)
+[info] >      at Object.peg$parse [as parse] (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/google-gax/build/src/pathTemplateParser.js:633:18)
+[info] >      at new PathTemplate (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/google-gax/build/src/pathTemplate.js:47:54)
+[info] >      at segments.forEach.segment (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/google-gax/build/src/pathTemplate.js:118:29)
+[info] >      at Array.forEach (<anonymous>)
+[info] >      at PathTemplate.render (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/google-gax/build/src/pathTemplate.js:112:23)
+[info] >      at SessionsClient.sessionPath (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/dialogflow/src/v2/sessions_client.js:374:52)
+[info] >      at app.post (/Users/mickjasker/Documents/projects/portfolio-bot/functions/lib/index.js:34:35)
+[info] >      at Layer.handle [as handle_request] (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/express/lib/router/layer.js:95:5)
+[info] >      at next (/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/express/lib/router/route.js:137:13)
+[info] >  (node:42992) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:42992) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-09-17T19:22:28.555Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:22:28.813Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:22:28.813Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:22:28.815Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:22:28.816Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:28.817Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:29.158Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:22:29.158Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:22:29.158Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:22:29.164Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43083.sock"}
+[debug] [2019-09-17T19:22:29.165Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43083.sock"}
+[debug] [2019-09-17T19:22:29.171Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:22:29.176Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:22:29.182Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:22:29.429Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:22:29.430Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:22:29.432Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:22:29.433Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:29.433Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:22:29.764Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:22:29.764Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:22:29.764Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:22:29.771Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43092.sock"}
+[debug] [2019-09-17T19:22:29.771Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43092.sock"}
+[debug] [2019-09-17T19:22:29.791Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:22:29.940Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:23:05.759Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:23:06.001Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:23:06.002Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:23:06.004Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:23:06.005Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:23:06.005Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:23:06.309Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:23:06.309Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:23:06.309Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:23:06.315Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43257.sock"}
+[debug] [2019-09-17T19:23:06.315Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43257.sock"}
+[debug] [2019-09-17T19:23:06.324Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:23:06.330Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:23:06.334Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:23:06.566Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:23:06.567Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:23:06.568Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:23:06.569Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:23:06.569Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:23:06.880Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:23:06.880Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:23:06.880Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:23:06.887Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43258.sock"}
+[debug] [2019-09-17T19:23:06.887Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43258.sock"}
+[debug] [2019-09-17T19:23:06.903Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:23:07.040Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:24:51.109Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:24:51.345Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:24:51.346Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:24:51.348Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:24:51.349Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:24:51.349Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:24:51.656Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:24:51.656Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:24:51.656Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:24:51.663Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43649.sock"}
+[debug] [2019-09-17T19:24:51.663Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43649.sock"}
+[debug] [2019-09-17T19:24:51.672Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:24:51.677Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:24:51.683Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:24:51.908Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:24:51.908Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:24:51.910Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:24:51.910Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:24:51.911Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:24:52.242Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:24:52.243Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:24:52.243Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:24:52.249Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43650.sock"}
+[debug] [2019-09-17T19:24:52.249Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43650.sock"}
+[debug] [2019-09-17T19:24:52.263Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:24:52.407Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:26:07.474Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:26:07.816Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:26:07.819Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:26:07.819Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:26:07.820Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:07.820Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:08.316Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:26:08.316Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:26:08.316Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:26:08.323Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43999.sock"}
+[debug] [2019-09-17T19:26:08.323Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_43999.sock"}
+[debug] [2019-09-17T19:26:08.328Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:26:08.335Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:26:08.338Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:26:08.571Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:26:08.571Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:26:08.573Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:26:08.573Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:08.574Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:08.898Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:26:08.898Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:26:08.898Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:26:08.904Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44010.sock"}
+[debug] [2019-09-17T19:26:08.904Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44010.sock"}
+[debug] [2019-09-17T19:26:08.922Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:26:09.078Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:26:38.089Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:26:38.435Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:26:38.435Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:26:38.437Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:26:38.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:38.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:38.958Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:26:38.958Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:26:38.958Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:26:38.967Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44225.sock"}
+[debug] [2019-09-17T19:26:38.967Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44225.sock"}
+[debug] [2019-09-17T19:26:38.972Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:26:38.978Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:26:38.983Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:26:39.216Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:26:39.216Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:26:39.218Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:26:39.219Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:39.219Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:26:39.524Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:26:39.524Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:26:39.524Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:26:39.531Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44226.sock"}
+[debug] [2019-09-17T19:26:39.532Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44226.sock"}
+[debug] [2019-09-17T19:26:39.556Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:26:39.707Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:10.246Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:10.499Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:10.500Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:10.501Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:10.502Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:10.502Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:10.817Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:10.817Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:10.817Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:10.823Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44489.sock"}
+[debug] [2019-09-17T19:28:10.823Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44489.sock"}
+[debug] [2019-09-17T19:28:10.828Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:10.834Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:10.837Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:11.068Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:11.068Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:11.070Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:11.070Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:11.071Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:11.390Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:11.390Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:11.390Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:11.396Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44490.sock"}
+[debug] [2019-09-17T19:28:11.397Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44490.sock"}
+[debug] [2019-09-17T19:28:11.410Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:11.556Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:31.159Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:31.420Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:31.420Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:31.422Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:31.423Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:31.423Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:31.748Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:31.748Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:31.748Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:31.753Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44590.sock"}
+[debug] [2019-09-17T19:28:31.754Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44590.sock"}
+[debug] [2019-09-17T19:28:31.759Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:31.766Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:31.769Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:32.023Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:32.023Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:32.025Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:32.026Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:32.026Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:32.363Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:32.364Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:32.364Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:32.370Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44605.sock"}
+[debug] [2019-09-17T19:28:32.370Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44605.sock"}
+[debug] [2019-09-17T19:28:32.385Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:32.543Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:42.751Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:42.994Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:42.995Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:42.997Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:42.998Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:42.998Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:43.312Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:43.312Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:43.312Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:43.318Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44756.sock"}
+[debug] [2019-09-17T19:28:43.318Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44756.sock"}
+[debug] [2019-09-17T19:28:43.323Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:43.329Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:28:43.334Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:28:43.563Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:28:43.564Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:28:43.565Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:28:43.566Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:43.566Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:28:43.877Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:28:43.877Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:28:43.877Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:28:43.886Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44757.sock"}
+[debug] [2019-09-17T19:28:43.886Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44757.sock"}
+[debug] [2019-09-17T19:28:43.899Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:28:44.047Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:29:17.623Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:29:17.866Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:29:17.867Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:29:17.868Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:29:17.869Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:29:17.869Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:29:18.201Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:29:18.201Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:29:18.201Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:29:18.206Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44758.sock"}
+[debug] [2019-09-17T19:29:18.206Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44758.sock"}
+[debug] [2019-09-17T19:29:18.211Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:29:18.217Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:29:18.221Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:29:18.470Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:29:18.470Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:29:18.472Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:29:18.472Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:29:18.473Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:29:18.803Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:29:18.803Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:29:18.803Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:29:18.809Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44759.sock"}
+[debug] [2019-09-17T19:29:18.809Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_44759.sock"}
+[debug] [2019-09-17T19:29:18.822Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:29:18.966Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:30:29.610Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:30:29.959Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:30:29.959Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:30:29.961Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:30:29.962Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:30:29.963Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:30:30.474Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:30:30.475Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:30:30.475Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:30:30.481Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45099.sock"}
+[debug] [2019-09-17T19:30:30.481Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45099.sock"}
+[debug] [2019-09-17T19:30:30.486Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:30:30.492Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:30:30.497Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:30:30.741Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:30:30.742Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:30:30.744Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:30:30.745Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:30:30.746Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:30:31.071Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:30:31.071Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:30:31.071Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:30:31.077Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45100.sock"}
+[debug] [2019-09-17T19:30:31.078Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45100.sock"}
+[debug] [2019-09-17T19:30:31.099Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:30:31.247Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:31:00.119Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:31:00.478Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:31:00.479Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:31:00.481Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:31:00.482Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:00.483Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:01.017Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:31:01.018Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:31:01.018Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:31:01.024Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45306.sock"}
+[debug] [2019-09-17T19:31:01.024Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45306.sock"}
+[debug] [2019-09-17T19:31:01.031Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:31:01.037Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:31:01.042Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:31:01.293Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:31:01.293Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:31:01.296Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:31:01.296Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:01.297Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:01.628Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:31:01.628Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:31:01.628Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:31:01.635Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45327.sock"}
+[debug] [2019-09-17T19:31:01.635Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45327.sock"}
+[debug] [2019-09-17T19:31:01.657Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:31:01.809Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:31:24.695Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:31:24.932Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:31:24.932Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:31:24.934Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:31:24.935Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:24.935Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:25.251Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:31:25.251Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:31:25.252Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:31:25.262Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45408.sock"}
+[debug] [2019-09-17T19:31:25.262Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45408.sock"}
+[debug] [2019-09-17T19:31:25.267Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:31:25.273Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:31:25.279Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:31:25.510Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:31:25.511Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:31:25.513Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:31:25.514Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:25.514Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:31:25.824Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:31:25.824Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:31:25.824Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:31:25.834Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45409.sock"}
+[debug] [2019-09-17T19:31:25.834Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_45409.sock"}
+[debug] [2019-09-17T19:31:25.847Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:31:25.986Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:03.611Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:03.861Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:03.862Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:03.864Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:03.864Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:03.865Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:04.185Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:04.185Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:04.185Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:04.192Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46206.sock"}
+[debug] [2019-09-17T19:35:04.192Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46206.sock"}
+[debug] [2019-09-17T19:35:04.197Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:04.202Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:04.208Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:04.447Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:04.447Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:04.449Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:04.450Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:04.450Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:04.772Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:04.772Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:04.772Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:04.781Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46207.sock"}
+[debug] [2019-09-17T19:35:04.781Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46207.sock"}
+[debug] [2019-09-17T19:35:04.796Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:04.935Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:40.240Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:40.483Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:40.483Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:40.485Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:40.486Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:40.486Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:40.803Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:40.804Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:40.804Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:40.813Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46250.sock"}
+[debug] [2019-09-17T19:35:40.813Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46250.sock"}
+[debug] [2019-09-17T19:35:40.818Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:40.825Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:40.828Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:41.060Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:41.061Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:41.063Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:41.063Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:41.064Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:41.379Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:41.379Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:41.379Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:41.389Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46251.sock"}
+[debug] [2019-09-17T19:35:41.389Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46251.sock"}
+[debug] [2019-09-17T19:35:41.402Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:41.544Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:45.976Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:46.216Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:46.216Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:46.218Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:46.219Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:46.219Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:46.539Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:46.539Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:46.539Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:46.549Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46280.sock"}
+[debug] [2019-09-17T19:35:46.549Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46280.sock"}
+[debug] [2019-09-17T19:35:46.554Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:46.560Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:35:46.564Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:35:46.797Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:35:46.798Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:35:46.799Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:35:46.800Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:46.800Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:35:47.115Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:35:47.115Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:35:47.115Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:35:47.121Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46281.sock"}
+[debug] [2019-09-17T19:35:47.122Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_46281.sock"}
+[debug] [2019-09-17T19:35:47.135Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:35:47.279Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:45:51.263Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:45:51.619Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:45:51.619Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:45:51.623Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:45:51.624Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:45:51.625Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:45:52.165Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:45:52.165Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:45:52.165Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:45:52.171Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48655.sock"}
+[debug] [2019-09-17T19:45:52.171Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48655.sock"}
+[debug] [2019-09-17T19:45:52.176Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:45:52.182Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:45:52.186Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:45:52.428Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:45:52.429Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:45:52.431Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:45:52.432Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:45:52.432Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:45:52.757Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:45:52.757Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:45:52.758Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:45:52.763Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48656.sock"}
+[debug] [2019-09-17T19:45:52.764Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48656.sock"}
+[debug] [2019-09-17T19:45:52.784Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:45:52.935Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:46:01.428Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:46:01.673Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:46:01.674Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:46:01.676Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:46:01.677Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:46:01.677Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:46:01.990Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:46:01.990Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:46:01.990Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:46:01.997Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48657.sock"}
+[debug] [2019-09-17T19:46:01.998Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48657.sock"}
+[debug] [2019-09-17T19:46:02.005Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:46:02.011Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:46:02.016Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:46:02.258Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:46:02.258Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:46:02.260Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:46:02.261Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:46:02.261Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:46:02.580Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:46:02.580Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:46:02.580Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:46:02.586Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48658.sock"}
+[debug] [2019-09-17T19:46:02.586Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_48658.sock"}
+[debug] [2019-09-17T19:46:02.600Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:46:02.745Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:47:50.300Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:47:50.549Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:47:50.550Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:47:50.552Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:47:50.552Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:47:50.553Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:47:50.875Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:47:50.875Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:47:50.875Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:47:50.885Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_49129.sock"}
+[debug] [2019-09-17T19:47:50.885Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_49129.sock"}
+[debug] [2019-09-17T19:47:50.890Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:47:50.897Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-17T19:47:50.900Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-17T19:47:51.132Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-17T19:47:51.132Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-17T19:47:51.134Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-17T19:47:51.134Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:47:51.135Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-17T19:47:51.455Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-17T19:47:51.455Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-17T19:47:51.455Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-17T19:47:51.461Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_49130.sock"}
+[debug] [2019-09-17T19:47:51.461Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_49130.sock"}
+[debug] [2019-09-17T19:47:51.475Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-17T19:47:51.619Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-18T09:32:14.577Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-18T09:32:14.999Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-18T09:32:15.000Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-18T09:32:15.002Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-18T09:32:15.003Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:32:15.004Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:32:15.598Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-18T09:32:15.598Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-18T09:32:15.598Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-18T09:32:15.604Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_11548.sock"}
+[debug] [2019-09-18T09:32:15.607Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_11548.sock"}
+[debug] [2019-09-18T09:32:15.615Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-18T09:32:15.622Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-18T09:32:15.625Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-18T09:32:15.868Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-18T09:32:15.869Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-18T09:32:15.871Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-18T09:32:15.872Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:32:15.873Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:32:16.190Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-18T09:32:16.190Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-18T09:32:16.190Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-18T09:32:16.196Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_11549.sock"}
+[debug] [2019-09-18T09:32:16.196Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_11549.sock"}
+[debug] [2019-09-18T09:32:16.222Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-18T09:32:16.367Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-18T09:42:21.633Z] Accepted request OPTIONS /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-18T09:42:21.998Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-18T09:42:21.999Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-18T09:42:22.003Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-18T09:42:22.004Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:42:22.005Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:42:22.540Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-18T09:42:22.540Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-18T09:42:22.540Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-18T09:42:22.549Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_13779.sock"}
+[debug] [2019-09-18T09:42:22.549Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_13779.sock"}
+[debug] [2019-09-18T09:42:22.555Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-18T09:42:22.562Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s
+[debug] [2019-09-18T09:42:22.567Z] Accepted request POST /porfolio-bot-ipwpmm/us-central1/app/message --> app
+[debug] [2019-09-18T09:42:22.817Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/mickjasker/Documents/projects/portfolio-bot/functions","node_version":"8.13.0"}
+[info] i  functions: Beginning execution of "app"
+[debug] [2019-09-18T09:42:22.817Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-18T09:42:22.819Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-18T09:42:22.820Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:42:22.820Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/mickjasker/Documents/projects/portfolio-bot/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-18T09:42:23.144Z] [runtime-status] Trigger "app" has been found, beginning invocation! {}
+[debug] [2019-09-18T09:42:23.145Z] [runtime-status]  {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2019-09-18T09:42:23.145Z] [runtime-status] Running app in mode HTTPS {}
+[debug] [2019-09-18T09:42:23.153Z] {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_13780.sock"}
+[debug] [2019-09-18T09:42:23.153Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/0z/h2hyc5gd7fn9yjxf7d00w8f00000gn/T/firebase_emulator_invocation_13780.sock"}
+[debug] [2019-09-18T09:42:23.176Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-18T09:42:23.327Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "app" in ~1s

@@ -55,16 +55,11 @@ export default class ChatWrapper extends TransitionComponent {
   }
 
   sendMessage() {
-    this.chat
-      .sendMessage(this.messageInput)
-      .then(() => {
-        this.messageInput = '';
-        const textField = <ITextField>this.$refs.input;
-        textField.clearField();
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    this.chat.sendMessage(this.messageInput);
+
+    this.messageInput = '';
+    const textField = <ITextField>this.$refs.input;
+    textField.clearField();
   }
 }
 </script>
